@@ -1,4 +1,4 @@
-export default function Profile({ title, stats }) {
+export default function Statistics({ title, stats }) {
   return (
     <section class="statistics">
       {title && <h2 class="title">{title}</h2>}
