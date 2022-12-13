@@ -10,6 +10,7 @@ export default function FriendList({ friends }) {
           name={friend.name}
           isOnline={friend.isOnline}
           id={friend.id}
+          key={friend.id}
         />
         // </li>
       ))}
