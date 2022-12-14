@@ -9,7 +9,6 @@ export default function Profile({
   avatar = defaultImg,
   stats,
 }) {
-  console.log(styles);
   return (
     <div className={styles.profile}>
       <div class="description">
