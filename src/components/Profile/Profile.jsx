@@ -11,25 +11,30 @@ export default function Profile({
 }) {
   return (
     <div className={styles.profile}>
-      <div class="description">
-        <img src={avatar} alt="User avatar" class="avatar" width="200px" />
-        <p class="name">{username}</p>
-        <p class="tag">@{tag}</p>
-        <p class="location">{location}</p>
+      <div className={styles.description}>
+        <img
+          src={avatar}
+          alt="User avatar"
+          className={styles.avatar}
+          width="160px"
+        />
+        <p className={styles.userName}>{username}</p>
+        <p className={styles.userInfo}>@{tag}</p>
+        <p className={styles.userInfo}>{location}</p>
       </div>
 
-      <ul class="stats">
-        <li>
-          <span class="label">Followers</span>
-          <span class="quantity"> {stats.followers}</span>
+      <ul className={styles.stats}>
+        <li className={styles.statsItem}>
+          <span className={styles.statsLabel}>Followers</span>
+          <span className={styles.statsQuantity}> {stats.followers}</span>
         </li>
-        <li>
-          <span class="label">Views</span>
-          <span class="quantity"> {stats.views}</span>
+        <li className={styles.statsItem}>
+          <span className={styles.statsLabel}>Views</span>
+          <span className={styles.statsQuantity}> {stats.views}</span>
         </li>
-        <li>
-          <span class="label">Likes</span>
-          <span class="quantity"> {stats.likes}</span>
+        <li className={styles.statsItem}>
+          <span className={styles.statsLabel}>Likes</span>
+          <span className={styles.statsQuantity}> {stats.likes}</span>
         </li>
       </ul>
     </div>

@@ -1,3 +1,5 @@
+import { GlobalStyleComponent } from 'styles/GlobalStyles';
+import { Container } from './Container/Container.styled';
 import user from './Profile/user.json';
 import Profile from './Profile/Profile';
 import data from './Statistics/data.json';
@@ -9,7 +11,7 @@ import TransactionHistory from './TransactionHistory/TransactionHistory';
 
 export const App = () => {
   return (
-    <>
+    <Container>
       <Profile
         username={user.username}
         tag={user.tag}
@@ -20,6 +22,7 @@ export const App = () => {
       <Statistics title="Upload stats" stats={data} />
       <FriendList friends={friends} />
       <TransactionHistory transactions={transactions} />
-    </>
+      <GlobalStyleComponent />
+    </Container>
   );
 };
